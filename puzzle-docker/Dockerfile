@@ -4,3 +4,5 @@ RUN apt-get update && apt-get install less vim git -y
 
 COPY Dockerfile /opt/Dockerfile-puzzle
 COPY README.md /opt/README-puzzle.md
+
+RUN useradd broccoli -m -s /bin/bash -p santa
