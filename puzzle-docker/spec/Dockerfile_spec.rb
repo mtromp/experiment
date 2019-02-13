@@ -29,10 +29,21 @@ describe 'Dockerfile' do
   describe file('/usr/bin/git') do
     it { should exist }
   end
+  describe file('/usr/bin/sudo') do
+    it { should exist }
+  end
   describe file('/etc/passwd') do
     it { should contain 'broccoli'}
+    it { should contain 'potato'}
+    it { should contain 'cheese'}
   end
   describe file('/home/broccoli') do
+    it { should be_directory }
+  end
+  describe file('/home/potato') do
+    it { should be_directory }
+  end
+  describe file('/home/cheese') do
     it { should be_directory }
   end
 end
