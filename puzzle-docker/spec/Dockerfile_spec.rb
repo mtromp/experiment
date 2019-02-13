@@ -32,7 +32,6 @@ describe 'Dockerfile' do
   describe file('/etc/passwd') do
     it { should contain 'broccoli'}
   end
-
   describe file('/home/broccoli') do
     it { should be_directory }
   end

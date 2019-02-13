@@ -10,3 +10,11 @@ use serverspec and docker-spec to test drive the functionality.
 - git
 - bash completion
 - git completion
+
+## experiences
+To create a user with a password that works, the -p option for useradd
+is incorrect. `-p` requires an encrypted password. The other way is to
+use the passwd command as in the following example:
+```
+useradd <username> ; echo -e "<newpassword>\n<newpassword>" | passwd username
+```
