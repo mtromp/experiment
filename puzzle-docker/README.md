@@ -19,3 +19,7 @@ use the passwd command as in the following example:
 useradd <username> ; echo -e "<newpassword>\n<newpassword>" | passwd username
 ```
 To make this command work in a Dockerfile, it is important to force bash to execute the command.
+
+## create git merge conflict
+
+See the following blog post: https://jonathanmh.com/how-to-create-a-git-merge-conflict/
